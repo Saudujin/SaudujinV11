@@ -30,10 +30,10 @@ echo "Creating production environment variables..."
 cat > .env.production << 'EOL'
 # Production environment variables
 NEXT_PUBLIC_API_URL=https://falcons-supporters-league.vercel.app/api
-MONGODB_URI=mongodb+srv://falcons:${MONGODB_PASSWORD}@cluster0.mongodb.net/falcons-supporters?retryWrites=true&w=majority
-TWILIO_ACCOUNT_SID=AC8078fdcd766441e60642ed194c562aa6
-TWILIO_AUTH_TOKEN=f066b7dc461c8e8e73057e3b119f728f
-TWILIO_VERIFY_SERVICE_SID=VA5cf3bf48988c4025fa81c55cdbdc5a3a
+MONGODB_URI=${MONGODB_URI}
+TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+TWILIO_VERIFY_SERVICE_SID=${TWILIO_VERIFY_SERVICE_SID}
 JWT_SECRET=falcons_supporters_league_jwt_secret_2025
 NEXT_PUBLIC_DEFAULT_LOCALE=en
 NEXT_PUBLIC_AVAILABLE_LOCALES=en,ar

@@ -2,9 +2,9 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import twilio from 'twilio';
 
 // Initialize Twilio client with credentials
-const accountSid = process.env.TWILIO_ACCOUNT_SID || 'AC8078fdcd766441e60642ed194c562aa6';
-const authToken = process.env.TWILIO_AUTH_TOKEN || 'f066b7dc461c8e8e73057e3b119f728f';
-const verifyServiceSid = process.env.TWILIO_VERIFY_SERVICE_SID || 'VA5cf3bf48988c4025fa81c55cdbdc5a3a';
+const accountSid = process.env.TWILIO_ACCOUNT_SID || '';
+const authToken = process.env.TWILIO_AUTH_TOKEN || '';
+const verifyServiceSid = process.env.TWILIO_VERIFY_SERVICE_SID || '';
 
 const client = twilio(accountSid, authToken);
 
